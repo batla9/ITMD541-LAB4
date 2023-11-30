@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sunrise Sunset Dashboard</title>
+</head>
+<body>
+    <video autoplay loop muted play-inline class ="back-video">
+        <source src = "sunset.mp4" type="video/mp4">
+    </video>
+    <header>
+        <marquee behavior="scroll" direction="right" scrollamount="5">
+        <h1>Sunrise Sunset Dashboard</h1>
+    </marquee>
+    </header>
+    <main>
+        <section id="location-section">
+            <div id="location-search">
+                <label for="location-search-input">Enter Location:</label>
+                <input type="text" id="location-search-input" placeholder="e.g., Chicago">
+                <button id="location-search-btn">Search Location</button>
+            </div>
+            <br>
+            <div id="current-location">
+                <button id="current-location-btn">Get Current Location</button>
+            </div>
+        </section>
+        <section id="dashboard" class="hidden">
+            <div id="today-container">
+                <p>Enter the location to display the sunrise and sunset details of a particular location.</p>
+            </div>
+            <div id="tomorrow-container" >
+                <p>Click on Get Current Location button to display the current location's sunrise and sunset details.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by &copy; 2023 Bhargava Sai Atla</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
